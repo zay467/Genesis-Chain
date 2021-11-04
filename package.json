@@ -1,0 +1,14 @@
+{
+  "name": "genesis-chain",
+  "version": "1.0.0",
+  "description": "Public Blockchain with PoW Protocol.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Blockchain"
+  ],
+  "author": "Zay Maw",
+  "license": "ISC"
+}
