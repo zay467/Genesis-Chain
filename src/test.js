@@ -20,8 +20,7 @@ const currentBlockData = [
     recipient: "Shine",
   },
 ];
-const nonce = 100;
 
-console.log(genesis.hashBlock(previousBlockHash, currentBlockData, nonce));
-
+console.log(genesis.proofOfWork(previousBlockHash, currentBlockData));
+// console.log(genesis.hashBlock(previousBlockHash, currentBlockData, 121199));
 console.log(genesis);
