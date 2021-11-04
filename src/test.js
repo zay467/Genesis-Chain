@@ -2,18 +2,26 @@ const Blockchain = require("./blockchain.js");
 
 const genesis = new Blockchain();
 
-genesis.createNewBlock(5424, "PreviousHash", "Hash");
+const previousBlockHash = "AEOEHQ9GHE9GQ";
+const currentBlockData = [
+  {
+    amount: 10,
+    sender: "Zay",
+    recipient: "Shine",
+  },
+  {
+    amount: 30,
+    sender: "Zay",
+    recipient: "Shine",
+  },
+  {
+    amount: 80,
+    sender: "Zay",
+    recipient: "Shine",
+  },
+];
+const nonce = 100;
 
-genesis.createNewTransaction(100, "Zay", "Shine");
-
-genesis.createNewBlock(3742, "PreviousHash", "Hash");
-
-genesis.createNewTransaction(50, "Zay", "Shine");
-
-genesis.createNewTransaction(100, "Zay", "Shine");
-
-genesis.createNewTransaction(300, "Zay", "Shine");
-
-genesis.createNewBlock(9751, "PreviousHash", "Hash");
+console.log(genesis.hashBlock(previousBlockHash, currentBlockData, nonce));
 
 console.log(genesis);
