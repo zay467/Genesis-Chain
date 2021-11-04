@@ -21,6 +21,6 @@ const currentBlockData = [
   },
 ];
 
-console.log(genesis.proofOfWork(previousBlockHash, currentBlockData));
+// console.log(genesis.proofOfWork(previousBlockHash, currentBlockData));
 // console.log(genesis.hashBlock(previousBlockHash, currentBlockData, 121199));
 console.log(genesis);
